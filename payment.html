@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title>Payment</title>
+        <style>
+        body{background-color: rgb(241, 199, 91);
+            background-image: url("order\ confirmed.jpg");
+            align-items:start;
+            text-align:left;
+            background-size: 90%;
+            opacity: 9;
+            font-size: 25px;
+            color:white;
+        }
+        .glass-card {
+    backdrop-filter: blur(10px);
+    background: rgba(219, 225, 226, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(12, 13, 5, 0.18);
+    box-shadow: 0 4px 30px rgba(213, 205, 205, 0.1);
+    padding: 50px;
+    padding-left: 100px;
+align-items:center;
+    text-align:center;
+    width: 400px;
+    color: #0a1414;
+    align-content: flex-end;
+}
+
+    h1{
+        color:rgb(249, 249, 241);
+    }
+h3{
+    background-color: rgb(79, 218, 55);
+    text-align: center;
+    padding: 40px;
+    padding-left: 90px;
+    padding-top: 0%;
+}
+input[type=submit]{
+
+    background-color: rgb(79, 218, 55);
+color: rgb(18, 12, 12);
+padding-left: 100px;
+border-radius: 0.5ch;
+font-size: 15px;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 20%;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  top: 13px;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-1;
+
+}
+.navbar{
+opacity: 0.7;
+    text-align:center;
+    text-decoration:none;
+ padding: 20px;  
+ padding-left: 2px; 
+ padding-right: 2px;
+ overflow: hidden;
+color: rgb(253, 247, 247);
+padding-top: 8px;
+overflow:hidden;
+background-color:rgb(11, 19, 20);
+}
+.navbar a{
+color:rgb(238, 230, 230);
+align-items:center;
+padding: 25px 17px;
+font-size:25px;
+text-decoration: none;
+}
+
+.navbar a:hover{
+background-color: rgb(37, 42, 42); 
+color:rgb(242, 242, 227);
+text-decoration: none;
+
+}
+.navbar a:active{
+ background-color: rgb(237, 181, 14);
+ color: rgb(190, 173, 173);
+ text-decoration: none;
+}
+            </style>
+            </head>
+        <body>
+            <div class="navbar">
+                <a href="home.html"> Home </a>
+                <a href="about us.html">About Us</a>
+                <a href="services2.html">Services</a>
+                <a href="payment.html">Payment</a>
+                <a href="trackmycourier.html">Track</a>
+                <a href="FAQ'S.html">FAQ's</a>
+                <a href="login.html">Login</a>
+                <a href="Contact us1.html">Contact Us</a>
+                </div><br>
+                <br>
+            <video autoplay muted loop id="myVideo">
+                <source src="services.mp4" type="video/mp4">
+                    </video>
+            <form action="order confirmed.html">
+                
+<h1>Parcel your courier delivery</h1>
+<div class="glass-card">
+   Type of Parcel:                 
+<select name="parcel" >
+    <option selected>---please select type--- </option>
+    <option>Documents</option>
+    <option>Non Documents</option>
+    <option>Clothes</option>
+    <option>Medicines</option>
+    <option>Electronics</option> 
+    <option>Emergency things</option>
+    <option>Grocery items</option>
+    <option>Eatables</option>
+    <option>others</option>
+    </select><br><br>
+    Weight(in KG's):
+    <input type="number" value="kgs" min="0" max="50" step="1"required/><br><br>
+    Parcel to:
+    <select name="state" >
+        <option selected>---please select state--- </option>
+        <option>Andhra Pradesh</option>
+        <option>Arunachal Pradesh</option>
+        <option>Assam</option>
+        <option>Bihar</option>
+        <option>Chattisgarh</option> 
+        <option>Delhi</option>
+        <option>Goa</option>
+        <option>Gurajat</option>
+        <option>Haryana</option>
+    <option>Mizoram</option>
+    <option>Nagaland</option>
+    <option>Odisha</option>
+    <option>Punjab</option> 
+    <option>Rajasthan</option>
+    <option>Sikkim</option>
+    <option>Tamil Nadu</option>
+    <option>uttarpradesh</option>
+    <option>telengana</option>
+    <option>tripura</option>
+    <option>uttarakhand</option>
+    <option>west bengal</option> 
+    <option>jammu&srinagar</option>
+    <option>maharastra</option>
+    <option>Nepal</option>
+        </SELECT>
+<br>
+<br>
+
+Amount:
+<select name="amount">
+<option selected>---please select amount--- </option>
+        <option>100rs-Documents</option>
+        <option>200rs-Non Documents</option>
+        <option>100rs-Clothes</option>
+        <option>100rs-Medicines</option>
+        <option>300rs-Electronics</option>
+        <option>200rs-Grocery items</option>
+        <option>50rs-Eatables</option>
+        </select><br><br>
+        Payment Type:
+        <select name="method" >
+            <option selected>---please type of payment-- </option>
+            <option>Cash On Delivery</option>
+            <option>Credit Card</option>
+            <option>Net Banking</option>
+            </select>
+            <br><br>
+
+      <label>Payment id:(<span style="color:red;">*</span>)
+        </label><input type="text"required>
+        
+    </div>
+   
+    
+        
+        <input type="submit" value="Confirm"><br>
+</form></form>
+            </body>

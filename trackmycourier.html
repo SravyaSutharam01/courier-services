@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Track my courier</title>
+        <style>
+           body{
+            background-color: rgb(245, 245, 249);
+            background-image: url("track.png");
+           image-resolution: 100%;
+           background-repeat: no-repeat;
+           background-size: cover;
+            opacity: 0.9;
+         }
+         input::placeholder {
+font-size: 17px;
+color: hsl(237, 90%, 38%);
+opacity: 0.8;
+}
+
+
+         
+         h3{
+            padding-top: 20px;
+            font-size: 40px;
+            color:rgb(231, 33, 11);
+            opacity:0.9;
+
+         }
+         form{
+            padding-top: 10px;
+            font-size: 20px;
+            color:rgb(231, 33, 11);
+            opacity:0.9;
+
+         }
+         input[type=text] {
+         width: 20%;
+        padding: 10px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px black;
+        box-sizing:content-box;
+        }
+input[type=submit]{
+background-color:rgb(29, 246, 40);
+color: white;
+font-size: 20px;
+border-radius: 1cap;
+padding: 14px 15px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 20%;
+}
+input[type=submit]:hover{
+opacity: 1;
+}
+      .container{
+   padding:10px;
+}
+.container1{
+   font-size:20px;
+}
+.navbar{
+opacity: 0.7;
+    text-align:center;
+    text-decoration:none;
+ padding: 20px;  
+ padding-left: 2px; 
+ padding-right: 2px;
+ overflow: hidden;
+color: rgb(253, 247, 247);
+padding-top: 8px;
+overflow:hidden;
+background-color:rgb(11, 19, 20);
+}
+.navbar a{
+color:rgb(238, 230, 230);
+align-items:center;
+padding: 25px 17px;
+font-size:25px;
+text-decoration: none;
+}
+
+.navbar a:hover{
+background-color: rgb(37, 42, 42); 
+color:rgb(242, 242, 227);
+text-decoration: none;
+
+}
+.navbar a:active{
+ background-color: rgb(237, 181, 14);
+ color: rgb(190, 173, 173);
+ text-decoration: none;
+}
+ </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="home.html"> Home </a>
+            <a href="about us.html">About Us</a>
+            <a href="services2.html">Services</a>
+            <a href="payment.html">Payment</a>
+            <a href="trackmycourier.html">Track</a>
+            <a href="FAQ'S.html">FAQ's</a>
+            <a href="login.html">Login</a>
+            <a href="Contact us1.html">Contact Us</a>
+            </div> <br>
+            <h3>TRACK THE STATUS OF YOUR PARCEL NOW!!</h3>
+            <p style="font-size: 25px; font-family:Arial, Helvetica, sans-serif">Enter the tracking number of your parcel 
+                to track the status of your parcel</p>
+            <div class="container">
+  <form name="myform" action="trackmycourier.html" 	onsubmit="return loginValidation(this)">
+    Track Id:<input type="text" name="track id" placeholder="Enter parcel id" autofocus> <br>
+  <br>
+  <div class="container1">
+  <br><a href="shipping.html" class="link">Forgot Track Id?</a>
+  <br></div>
+           <input type="submit" value="TRACK"><br>
+    
+           </div>
+          </form>
+
+
+    </body>
+</html>

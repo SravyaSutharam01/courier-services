@@ -1,0 +1,140 @@
+<html>
+   <head>
+        <title>JavaScript functions </title>
+        <style>
+         body{
+            background-color: rgb(245, 245, 249);
+            background-image: url("cour3.webp");
+           image-resolution: 100%;
+           background-repeat: no-repeat;
+           background-size: cover;
+            opacity: 0.9;
+         }
+         input::placeholder {
+font-size: 17px;
+color: hsl(237, 90%, 38%);
+opacity: 0.8;
+}
+
+
+         
+         h3{
+            padding-top: 30px;
+            font-size: 40px;
+            color:rgb(231, 33, 11);
+            opacity:0.9;
+         }
+         form{
+            padding-top: 30px;
+            font-size: 30px;
+            color:rgb(231, 33, 11);
+            opacity:0.9;
+         }
+         input[type=text],input[type=password] {
+         width: 30%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px black;
+        box-sizing:content-box;
+        }/* Set a style for all buttons */
+input[type=submit]{
+background-color:rgb(29, 246, 40);
+color: white;
+font-size: 20px;
+border-radius: 1cap;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 30%;
+}
+input[type=submit]:hover{
+opacity: 1;
+}
+      .container{
+   padding:10px;
+}
+.container1{
+   font-size:25px;
+}
+.navbar{
+opacity: 0.7;
+    text-align:center;
+    text-decoration:none;
+ padding: 20px;  
+ padding-left: 2px; 
+ padding-right: 2px;
+ overflow: hidden;
+color: rgb(253, 247, 247);
+padding-top: 8px;
+overflow:hidden;
+background-color:rgb(11, 19, 20);
+}
+.navbar a{
+color:rgb(238, 230, 230);
+align-items:center;
+padding: 25px 17px;
+font-size:25px;
+text-decoration: none;
+}
+
+.navbar a:hover{
+background-color: rgb(37, 42, 42); 
+color:rgb(242, 242, 227);
+text-decoration: none;
+
+}
+.navbar a:active{
+ background-color: rgb(237, 181, 14);
+ color: rgb(190, 173, 173);
+ text-decoration: none;
+}
+     </style>
+       </head>   
+      <script>
+         // User Validations
+ function loginValidation() {
+var uname = document.myform.username.value;
+var password = document.myform.password.value;
+    if(uname==null || uname=="") {
+    alert("Username can't be blank")
+    return false;  
+    } else if (password.length<6){
+    alert("Password Must be 6 letters")
+    return false;
+    }  
+    return true;                 
+    }           
+      </script>
+      </head>
+      <body>
+         <div class="navbar">
+            <a href="home.html"> Home </a>
+            <a href="about us.html">About Us</a>
+            <a href="services2.html">Services</a>
+            <a href="payment.html">Payment</a>
+            <a href="trackmycourier.html">Track</a>
+            <a href="FAQ'S.html">FAQ's</a>
+            <a href="login.html">Login</a>
+            <a href="Contact us1.html">Contact Us</a>
+            </div><br>
+<h3>Login in to Account</h3>
+          <div class="container">
+<form name="myform" action="payment.html" 	onsubmit="return loginValidation(this)">
+ User Name : <input type="text" name="username" placeholder="Enter username" autofocus> <br>
+Password :  <input type="password" name="password" placeholder="Enter password more than 5 characters">
+<br>
+<div class="container1">
+<br><a href="email1.html" class="link">Forgot Password</a>
+<br></div>
+         <input type="submit" value="LOGIN"><br>
+         <div class="container1">
+         New User?<a href="Registration.html">Register Here</a>
+         </div>
+         </div>
+        </form>
+   </body>
+
+</html>
+

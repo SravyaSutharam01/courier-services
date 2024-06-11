@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Registration Page</title>
+<style>
+    body{
+        background-color:rgb(249, 248, 248);
+        background-image: url("paymentt.webp");
+        background-size: 90%;
+        opacity:9;
+        font-size: 18px;
+        
+    }
+    input::placeholder {
+font-size: 13px;
+color: hsl(13, 90%, 49%);
+opacity: 0.8;
+}
+ .glass-card {
+    backdrop-filter: blur(0px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 30px rgba(216, 46, 46, 0.1);
+    padding: 5px;
+align-items: center;
+    text-align:left;
+    width: 400px;
+    color: #0a1414;
+    align-content: flex-end;
+}
+
+.glass-card h1 {
+    margin: 0 0 15px 0;
+}
+
+.glass-card p {
+    margin: 0;
+}
+h1{
+    color: rgb(18, 10, 11);
+    text-align: center;
+}
+input[type=submit]{
+background-color:rgb(226, 234, 226);
+color: rgb(11, 7, 7);
+font-size: 15px;
+}
+</style>
+
+<!--body style="background-image: "sunflower.jpg";
+"background-size: 100vw 100vh;""></body-->
+   <script>   
+// Check if passwords match
+      if (password !== confirmPassword) {
+        alert("Passwords do not match");
+        return false;
+      }
+
+      // Validate other fields (you can add more validation as needed)
+      if (username.length < 4 || username.length > 20) {
+        alert("Username must be between 4 and 20 characters");
+        return false;
+      }
+
+      if (!validateEmail(email)) {
+        alert("Invalid email format");
+        return false;
+      }
+
+      return true;
+    }
+
+    function validateEmail(email) {
+      // A simple email validation regular expression
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailPattern.test(email);
+    }
+  </script>
+</head>
+<body>
+  <form method="post" action="login.html" onsubmit="return validateForm(this)">
+<br>
+<div class="glass-card">
+  <form align = "center">
+<h1 style="background-color: rgb(78, 215, 239);">REGISTRATION</h1>
+<h3 style="background-color: rgb(232, 247, 249);opacity:0.7;">Note:Please enter correct details while registering</h3>
+
+<label>FIRST NAME :</label>
+<input type="text" name="first name" size="10" required>
+<br>
+<br>
+<label>LAST NAME :</label>
+<input type="text"name=" LAST name" size="10"required><br>
+<BR>
+<label>EMail-ID: </label>
+<input type = "text" placeholder = "enter email..."required><br>
+<label>Password: </label>
+<input type = "text" name="password"placeholder="enter password..."required><br>
+<label>Confirm :</label>
+<input type = "text"name="confirmPassword" placeholder="Re-enter your password:..." required><br>
+<br>
+<label>MOBILE :  </label>
+<input type = "text" name = "mobile" value ="+91" size ="2"/>
+<input type = "text" name = "mobile"  size ="10"required/><br>
+<br>
+ADDRESS:
+<br>
+<textarea cols="40" rows="5" value="address"required>address in the format like:
+Door no:1-23-456,Sravya Residencies,Shree Nagar,Ongole.
+</textarea>  
+<br> <br>  
+<input type = "submit" value="Submit">
+<input type = "submit" value="back">
+</div>
+</form>
+</body>
+</html>
